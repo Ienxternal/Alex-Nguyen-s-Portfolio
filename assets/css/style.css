@@ -1,0 +1,512 @@
+
+.background {
+    position: absolute;
+    /* overflow: scroll; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #000000, #1d1219, #2b1e31, #2d2e4f, #12426d);
+    /* background: linear-gradient(to right, #000000, #1c4180); */
+    /* display: flex;
+    flex-grow: 1; */
+    z-index: -1;
+}
+
+.background::before {
+    content: '';
+    position: fixed;
+    /* overflow: scroll; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(to right, #000000, #1c4180); */
+    background-image: linear-gradient(to right, #000000, #1d1219, #2b1e31, #2d2e4f, #12426d);
+    /* display: flex;
+    flex-grow: 1; */
+    z-index: -1;
+}
+
+.background div {
+    position: absolute;
+    border-radius: 100%;
+    height: 0;
+    filter: blur(440vw);
+    opacity: 0.4;
+    overflow:hidden;
+}
+
+.background div:nth-child(1) {
+    background: linear-gradient(132deg, #13136f 0.00%, #1F91CF 100.00%);
+    width: 30%;
+    padding-top: 30%;
+    left: 20%;
+    top: 20%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(2) {
+    background: linear-gradient(132deg, #0800FF 0.00%, #E32BE3 100.00%);
+    width: 7%;
+    padding-top: 7%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(3) {
+    background: linear-gradient(132deg, #ae32bc 0.00%, #1F91CF 100.00%);
+    width: 30%;
+    padding-top: 30%;
+    left: 80%;
+    top: 80%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Header and Nav bar */
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+}
+header {
+    width: 100%;
+	height: 5%;
+    padding-bottom: 0px;
+    /* border-bottom: 1px solid #ffffff; */
+}
+.logo {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: 30%;
+	float: left;
+	margin-top: 5px;
+	/* margin-left: 25px; */
+	letter-spacing: 4px;
+}
+nav {
+    float: right; 
+    width: 50%;
+    text-align: right;
+    /* margin-right: 25px; */
+}
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+ul li:hover a {
+	color: #2C9AB7;
+}
+
+/* Hero */
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
+
+}
+.hero {
+	/* background-color:rgba(127, 118, 247, 0.337); */
+	padding-top: 150px;
+	padding-bottom: 150px;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+.latter {
+	font-weight: bold;
+	color: #717070;
+}
+.tagline {
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 4px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.signature {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 40px;
+
+}
+
+/* About me */
+
+
+.aboutmecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    max-height: 30px;
+    /* max-width: 1280px; */
+
+
+}
+#about {
+    display: grid;
+    padding-top: 50px;
+    /* min-height: 50vh; */
+    /* align-items: center; */
+}
+
+#about h2 {
+    text-align: left;
+    margin-bottom: 0px;
+    grid-column-start: 2;
+}
+
+#about .contents {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+}
+
+
+#about .contents img {
+    width: 300px;
+    padding: 5px;
+    margin: 0 auto;
+    
+}
+
+.aboutmetext {
+    color:white;
+    width: 70%;
+	font-weight: lighter;
+	line-height: 25px;
+
+}
+
+.aboutmecontainer h2 {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
+}
+
+
+/* Gallery */
+.project{
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 150px;
+	letter-spacing: 4px;s
+}
+
+.griditem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #613590;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    transition:opacity 0.5s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.items a {
+    opacity: 0;
+	text-decoration:none;
+    color: white;
+    transition:opacity 0.5s;
+}
+.griditem:hover .items a {
+	color: white;
+	opacity: 1;
+}
+.griditem:hover > {
+	filter: opacity(0.9);
+	transform: scale(1.04);
+}
+.gridcontainer:hover > .griditem:not(:hover) {
+    opacity:.5;
+}
+.gridcontainer{
+	display: grid;
+    max-width:1280px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: minmax(250px, auto);
+	gap:15px; 
+	padding: 10px;
+	grid-auto-flow: dense; 
+}
+
+
+/* Responsive Elements */
+
+@media(min-width: 600px){
+.wide {
+	grid-column: span 2;
+}
+.tall {
+	grid-row: span 2;
+}
+}
+
+@media (min-width: 800px) {
+
+    #about h2 {
+        margin-bottom: 0px;
+    }
+
+    #about .contents {
+        grid-template-columns: 1fr 4fr;
+        /* align-items: center; */
+    }
+
+    #about .contents img {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-top: 13px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .container header nav {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+        float: none;
+        display: none;
+    }
+    header nav ul {
+    }
+    nav ul li {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .text_column {
+        width: 100%;
+        text-align: justify;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    .footer_column {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .parallax {
+        text-align: center;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 40%;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .parallax_description {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        width: 90%;
+        margin-top: 25px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 12px;
+        float: none;
+        text-align: center;
+    }
+    .banner {
+        background-color: #2D9AB7;
+        background-image: none;
+    }
+    .tagline {
+        margin-top: 20px;
+        line-height: 22px;
+    }
+    .hero_header {
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 22px;
+        text-align: center;
+    }
+    }
+    
+    /* Small Tablets */
+    @media (min-width: 321px)and (max-width: 767px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-top: 13px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        color: #043745;
+    }
+    .container header nav {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+        float: none;
+        overflow: auto;
+        display: inline-block;
+        background: #52bad5;
+    }
+    header nav ul {
+        padding: 0px;
+        float: none;
+    }
+    nav ul li {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .text_column {
+        width: 100%;
+        text-align: left;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    .footer_column {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .parallax {
+        text-align: center;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 40%;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .parallax_description {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        margin-top: 30%;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .thumbnail {
+        width: 50%;
+    }
+    .parallax {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-top: 20%;
+    }
+    .parallax_description {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .banner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer_column {
+        width: 100%;
+    }
+    }
+    
+    /* Small Desktops */
+    @media (min-width: 768px) and (max-width: 1096px) {
+    .text_column {
+        width: 100%;
+    }
+    .thumbnail {
+        width: 50%;
+    }
+    .text_column {
+        width: 100%;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .banner {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    }
