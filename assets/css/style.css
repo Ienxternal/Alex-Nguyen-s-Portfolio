@@ -1,3 +1,12 @@
+body {
+    font-family: 'Lora', serif;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  
+    text-transform: uppercase;
+   }
 
 .background {
     position: absolute;
@@ -75,6 +84,9 @@ header {
     width: 100%;
 	height: 5%;
     padding-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
     /* border-bottom: 1px solid #ffffff; */
 }
 .logo {
@@ -106,14 +118,17 @@ nav ul li {
 	letter-spacing: 2px;
 	font-weight: bold;
 	transition: all 0.3s linear;
+
 }
 ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
+    transition: 0.2s;
 
 }
 ul li:hover a {
-	color: #2C9AB7;
+	color: #1594ae;
+
 }
 
 /* Hero */
@@ -213,12 +228,14 @@ ul li:hover a {
 
 
 /* Gallery */
+
 .project{
 	color: #FFFFFF;
 	text-align: center;
 	margin-top: 150px;
-	letter-spacing: 4px;s
+	letter-spacing: 4px;
 }
+
 
 .griditem{
     display: flex;
@@ -237,6 +254,7 @@ ul li:hover a {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 .items a {
     opacity: 0;
 	text-decoration:none;
@@ -264,6 +282,30 @@ ul li:hover a {
 	grid-auto-flow: dense; 
 }
 
+
+
+/* Contact Information */
+.contactme {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}
+ 
+.contactme aside {
+    margin: 10px;
+    padding: 10px;
+    color:white;
+}
+
+.contacttext {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.contactme p {
+    font-family: 'Lora', serif;
+    text-transform: lowercase;
+
+}
 
 /* Responsive Elements */
 
@@ -389,6 +431,11 @@ ul li:hover a {
         margin-bottom: 0px;
         margin-left: 0px;
         color: #043745;
+    }
+
+    .contactme {
+        flex-direction: column;
+
     }
     .container header nav {
         margin-top: 0px;
