@@ -1,68 +1,56 @@
 body {
     font-family: 'Lora', serif;
 }
+
+/* Scrollbar color change includes different browser support. */
 html{
     scrollbar-color: grey transparent;
     scrollbar-width: thin;
 }
-
 html::-webkit-scrollbar-track
 {
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
     border-radius: 10px;
     background-color: transparent;
 }
-
 html::-webkit-scrollbar
 {
     width: 6px;
     background-color: #F5F5F5;
 }
-
 .html::-webkit-scrollbar-thumb
 {
     border-radius: 10px;
     box-shadow: inset 0 0 5px rgba(0,0,0,.3);
     background-color: grey;
 }
-
 h1, h2, h3, h4, h5, h6 {
 font-family: 'Montserrat', sans-serif;
-
 text-transform: uppercase;
 }
 
-
+/* Background elements to create background gradient and blue effect. */
 .background {
     position: absolute;
-    /* overflow: scroll; */
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-image: linear-gradient(to right, #000000, #1d1219, #2b1e31, #2d2e4f, #12426d);
-    /* background: linear-gradient(to right, #000000, #1c4180); */
-    /* display: flex;
-    flex-grow: 1; */
     z-index: -1;
 }
-
+/* Gradient to run in overfill */
 .background::before {
     content: '';
     position: fixed;
-    /* overflow: scroll; */
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    /* background: linear-gradient(to right, #000000, #1c4180); */
     background-image: linear-gradient(to right, #000000, #1d1219, #2b1e31, #2d2e4f, #12426d);
-    /* display: flex;
-    flex-grow: 1; */
     z-index: -1;
 }
-
-.background div {
+.background span {
     position: absolute;
     border-radius: 100%;
     height: 0;
@@ -70,8 +58,7 @@ text-transform: uppercase;
     opacity: 0.4;
     overflow:hidden;
 }
-
-.background div:nth-child(1) {
+.background span:nth-child(1) {
     background: linear-gradient(132deg, #13136f 0.00%, #1F91CF 100.00%);
     width: 30%;
     padding-top: 30%;
@@ -79,8 +66,7 @@ text-transform: uppercase;
     top: 20%;
     transform: translateX(-50%) translateY(-50%);
 }
-
-.background div:nth-child(2) {
+.background span:nth-child(2) {
     background: linear-gradient(132deg, #0800FF 0.00%, #E32BE3 100.00%);
     width: 7%;
     padding-top: 7%;
@@ -88,8 +74,7 @@ text-transform: uppercase;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
-.background div:nth-child(3) {
+.background span:nth-child(3) {
     background: linear-gradient(132deg, #ae32bc 0.00%, #1F91CF 100.00%);
     width: 30%;
     padding-top: 30%;
@@ -150,11 +135,11 @@ ul li a {
 	text-decoration: none;
     transition: 0.2s;
 }
+/* Hover over with text color change. */
 ul li:hover a {
 	color: #1594ae;
 }
-
-/* Hero */
+/* Hero section */
 .hero_header {
 	color: #FFFFFF;
 	text-align: center;
@@ -165,7 +150,6 @@ ul li:hover a {
 	letter-spacing: 4px;
 }
 .hero {
-	/* background-color:rgba(127, 118, 247, 0.337); */
 	padding-top: 150px;
 	padding-bottom: 100px;
     margin-top: 30px;
@@ -189,10 +173,9 @@ ul li:hover a {
     margin-right: auto;
     width: 70%;
     padding-top: 40px;
-
 }
 
-/* About me */
+/* About me section */
 .aboutmecontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
@@ -216,14 +199,12 @@ ul li:hover a {
     width: 300px;
     padding: 5px;
     margin: 0 auto;
-    
 }
 .aboutmetext {
     color:white;
     width: 70%;
 	font-weight: lighter;
 	line-height: 25px;
-
 }
 .aboutmecontainer h2 {
 	color: #FFFFFF;
@@ -235,8 +216,7 @@ ul li:hover a {
 	letter-spacing: 4px;
 }
 
-
-/* Gallery */
+/* Gallery uses grid to display */
 .project{
 	color: #FFFFFF;
 	text-align: center;
@@ -266,6 +246,8 @@ ul li:hover a {
     color: white;
     transition: opacity 0.5s;
 }
+
+/* Hover over section for gallery to create effects */
 .griditem:hover .items a {
 	color: white;
 	opacity: 1;
@@ -279,11 +261,9 @@ ul li:hover a {
 	filter: opacity(0.9);
     transition: all 0.4s;
 	transform: scale(1.04);
-    
 }
 .gridcontainer:hover > .griditem:not(:hover) {
     opacity:.5;
-
 }
 .gridcontainer{
 	display: grid;
@@ -389,8 +369,6 @@ a:link {
         width: 100%;
         float: none;
         display: none;
-    }
-    header nav ul {
     }
     nav ul li {
         margin-top: 0px;
