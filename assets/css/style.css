@@ -138,7 +138,8 @@ ul li a {
 /* Hover over with text color change. */
 ul li:hover a {
 	color: #ff878b;
-}
+    
+} 
 /* Hero section */
 .hero_header {
 	color: #FFFFFF;
@@ -196,7 +197,7 @@ ul li:hover a {
     grid-template-columns: 1fr;
 }
 #about .contents img {
-    width: 300px;
+    width: 200px;
     padding: 5px;
     margin: 0 auto;
 }
@@ -227,10 +228,9 @@ ul li:hover a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #613590;
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
-    color: white;
+    color: #ff878b;
     transition:opacity 0.5s;
     background-size: cover;
     background-position: center;
@@ -242,19 +242,24 @@ ul li:hover a {
 }
 .items a {
     opacity: 0;
+    font-family: 'Montserrat', sans-serif;
 	text-decoration:none;
-    color: white;
+    color: #ff878b;
     transition: opacity 0.5s;
+    
 }
 
 /* Hover over section for gallery to create effects */
 .griditem:hover .items a {
 	color: #ff878b;
 	opacity: 1;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
     text-shadow: -1px 1px 0 #000; 
 }
 .gridcontainer:hover > .griditem:hover{
@@ -323,6 +328,7 @@ a:link {
 
     #about .contents {
         grid-template-columns: 1fr 4fr;
+        align-content: center;
     }
 
     #about .contents img {
@@ -337,7 +343,6 @@ a:link {
         grid-column: 1;
         text-align: center;
     }
-    
     #about h2 {
         text-align: center;
         margin-bottom: 100px;
@@ -346,7 +351,6 @@ a:link {
         width: 100%;
         text-align: center;
     }
-
     .hero{
         padding-bottom: 30px;
     }
@@ -396,10 +400,8 @@ a:link {
         margin-bottom: 0px;
         margin-left: 0px;
     }
-
     .contactme {
         flex-direction: column;
-
     }
     .container header nav {
         margin-top: 0px;
@@ -410,7 +412,6 @@ a:link {
         float: none;
         overflow: auto;
         display: inline-block;
-
     }
     header nav ul {
         padding: 0px;
