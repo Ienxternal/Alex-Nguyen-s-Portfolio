@@ -137,7 +137,7 @@ ul li a {
 }
 /* Hover over with text color change. */
 ul li:hover a {
-	color: #1594ae;
+	color: #ff878b;
 }
 /* Hero section */
 .hero_header {
@@ -249,7 +249,7 @@ ul li:hover a {
 
 /* Hover over section for gallery to create effects */
 .griditem:hover .items a {
-	color: white;
+	color: #ff878b;
 	opacity: 1;
     padding-left: 40px;
     padding-right: 40px;
