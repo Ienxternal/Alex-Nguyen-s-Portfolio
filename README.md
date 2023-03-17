@@ -17,7 +17,7 @@ Created a portfolio to include an about me, gallery, and contact me.
 
 <h5>Reposition Location can be found here.</h5>
 
-<p><a href="https://github.com/Ienxternal/Challenge1"><img src="https://img.shields.io/badge/Location-Repo-blue" alt="Repo"></a></p>
+<p><a href="https://github.com/Ienxternal/Alex-Nguyen-s-Portfolio"><img src="https://img.shields.io/badge/Location-Repo-blue" alt="Repo"></a></p>
 
 
 <h3>User Story</h3>
