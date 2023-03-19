@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1V3aP1lWxpIKY765mXTVF-U0W9DtTgZJ8"  title="Horiseon Screenshot">
+  <img src="https://drive.google.com/uc?export=view&id=1V3aP1lWxpIKY765mXTVF-U0W9DtTgZJ8"  title="My Portfolio">
 </p>
 
 
