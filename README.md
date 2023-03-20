@@ -15,6 +15,9 @@
 <h3>Project Summary</h3>
 Created a portfolio to include an about me, gallery, and contact me.
 
+<h3>Tools</h3>
+Figma, Dreamweaver, Webflow
+
 <h5>Reposition Location can be found here.</h5>
 
 <p><a href="https://github.com/Ienxternal/Alex-Nguyen-s-Portfolio"><img src="https://img.shields.io/badge/Location-Repo-blue" alt="Repo"></a></p>
